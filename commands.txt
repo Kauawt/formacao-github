@@ -1,0 +1,89 @@
+# Principais Comandos do Git
+Comandos Básicos
+git init
+Inicia um repositório no diretório atual.
+
+git clone [URL]
+Clona um repositório existente para o diretório local.
+
+git add .
+Adiciona alterações ao índice, preparadas para o commit.
+
+git commit -m "mensagem"
+Realiza um commit com a mensagem especificada.
+
+git status
+Exibe o estado atual do repositório, indicando quais arquivos foram modificados.
+
+git log
+Mostra o histórico de commits do repositório.
+
+git branch
+Lista todas as branches locais e destaca a branch atual.
+
+git branch (nome)
+Cria uma nova branch com o nome especificado.
+
+git checkout (nome)
+Alterna para a branch específica.
+
+git merge (branch)
+Combina as alterações de uma branch para a branch atual.
+
+git pull
+Atualiza o repositório local com as alterações do repositório remoto.
+
+git push (remote) (branch)
+Envia os commits locais para o repositório remoto.
+
+git remote -v
+Lista os repositórios remotos configurados.
+
+git fetch
+Recupera as últimas alterações do repositório remoto, mas não faz merge automaticamente.
+
+git reset (arquivo)
+Desfaz as alterações no arquivo especificado, removendo-o do índice.
+
+git rm (arquivo)
+Remove um arquivo do repositório.
+
+git diff
+Mostra as diferenças que ainda não foram adicionadas ao índice.
+
+git remote add (nome-remoto) (URL)
+Adiciona um repositório remoto com um nome específico.
+
+git push origin main
+Executado para efetuar um push das alterações locais para o repositório online.
+
+Configuração de SSH
+Ao criar uma chave SSH, você gera uma chave pública e uma privada. A chave pública deve ser adicionada ao Git. Depois, copie o link SSH do repositório e use o comando:
+
+git remote set-url origin "chave_ssh_do_git"
+--------------------------------------------------------------------------------------
+  
+Conceitos Importantes
+O que são Branches?
+Branches são linhas de desenvolvimento separadas no controle de versão. Elas permitem que você trabalhe em modificações no código sem afetar diretamente o código principal.
+
+O que são Pull Requests e Merge?
+Um Pull Request (PR) é uma solicitação para propor alterações em um repositório, permitindo que essas alterações sejam revisadas e mescladas (merge).
+
+O que é Fork?
+Um fork é uma cópia de um repositório que permite aos usuários implementar alterações independentemente. Se você quiser fazer uma alteração, outras pessoas podem revisá-la e aprová-la.
+
+Tags
+Uso de tags para versionamento:
+
+git tag -a v1.1 -m "mensagem"
+As tags são importantes para marcar versões significativas do seu projeto.
+
+Releases
+As releases documentam tags e versões, permitindo anexar arquivos e implementar várias funcionalidades.
+
+Outras Funcionalidades
+Issues: Pequenas tarefas ou problemas que usuários ou proprietários de repositórios podem registrar e gerenciar.
+
+Wikis: Uma forma de documentação mais formal, detalhando aspectos do projeto.
+Esse formato facilita a leitura e compreensão, organizando as informações em seções claras e com destaque para cada assunto.
